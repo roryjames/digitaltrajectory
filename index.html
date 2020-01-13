@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body> 
+    <div class="main">
+        <div id='title'>Digital Trajectory</div>
+    </div>   
+</body>
+
+<style>
+    @font-face {
+  font-family: orbitron;
+  src: url('/Orbitron-VariableFont_wght.ttf');
+    }
+    body{
+        background-color:#121212;
+        font-family:Arial, Helvetica, sans-serif;
+        color:black;
+    }
+    .main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    max-height:800px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.main{
+    color:#f7f7e9;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: orbitron;
+    font-size:8em;
+}
+.main .dt{
+        color:#f7f7e9;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: orbitron;
+    }
+  .main .dt2{
+        text-shadow: -4px 0 2px #4957ef, 4px 0 2px #b01b35;
+    }
+
+</style>
+
+<script>
+    (function loop() {
+        let rand = Math.round(Math.random() * (3000 - 500)) + 500;
+        setTimeout(function(){
+            flicker();
+            loop();
+        }, rand)
+    }());
+
+    function flicker(){
+        let title = document.getElementById('title')
+        let rand = Math.round(Math.random() * (3000 - 500)) + 500;
+        title.classList.add('dt2');
+            setTimeout(()=>{
+                title.classList.remove('dt2');
+            }, rand)
+    }
+
+</script>
+</html>

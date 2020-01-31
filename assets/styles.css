@@ -22,6 +22,7 @@
         font-family: 'Orbitron', sans-serif;
         font-size:8vw;
         text-align:center;
+        margin:5% 0;
         }
     .main .dt{
         color:#f7f7e9;
@@ -34,7 +35,7 @@
         }
     .hr{
         height:1px;
-        margin:0 15% 0 15%;
+        margin:0 15%;
         opacity:0.5;
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	    background-size: 400% 400%;
@@ -56,6 +57,7 @@
         display:flex;
         justify-content:space-evenly;
         color:white;
+        margin:5% 0;
         }
     .social button{
         width:12vw;

@@ -1,0 +1,78 @@
+    body{
+        background-color:#121212;
+    }
+    @font-face {
+        font-family: orbitron;
+        src: url('/Orbitron-VariableFont_wght.ttf');
+        }
+    .container{
+        font-family:Arial, Helvetica, sans-serif;
+        color:black;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        position:fixed;
+        top:0;
+        left:0;
+        height:100%;
+        }
+    .main{
+        color:#f7f7e9;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Orbitron', sans-serif;
+        font-size:8vw;
+        text-align:center;
+        }
+    .main .dt{
+        color:#f7f7e9;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: orbitron;
+        }
+    .main .dt2{
+        text-shadow: -4px 0 2px #4957ef, 4px 0 2px #b01b35;
+        }
+    .hr{
+        height:1px;
+        margin:0 15% 0 15%;
+        opacity:0.5;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	    background-size: 400% 400%;
+	    animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .social{
+        width:100%;
+        display:flex;
+        justify-content:space-evenly;
+        color:white;
+        }
+    .social button{
+        width:12vw;
+        color:white;
+        background-color: #121212;
+        border:none;
+        cursor:pointer;
+        }
+    .social button path{
+        fill:white;
+    }
+    .social button path:hover{
+        fill:lightgray;
+    }
+        @media (max-width:768px){
+            .social button{
+                width:20vw;
+            }
+        }

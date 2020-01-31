@@ -3,14 +3,17 @@
 <head>
     <title>Digital Trajectory</title>
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css">
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
 </head>
 <body> 
+    <div class="container">
     <div class="main">
         <div id='title'>Digital Trajectory</div>
     </div>
+    <div class="hr"></div>
     <div class="social">
         <button>
             <a href="https://www.github.com/roryjames" target="_blank">
@@ -35,65 +38,8 @@
               </a>
           </button>
     </div>
+</div>
 </body>
-
-<style>
-    @font-face {
-        font-family: orbitron;
-        src: url('/Orbitron-VariableFont_wght.ttf');
-        }
-    body{
-        background-color:#121212;
-        font-family:Arial, Helvetica, sans-serif;
-        color:black;
-        display:flex;
-        flex-direction:column;
-        margin:auto;
-        }
-    .main{
-        color:#f7f7e9;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: 'Orbitron', sans-serif;
-        font-size:8vw;
-        text-align:center;
-        margin:10vw;
-        }
-    .main .dt{
-        color:#f7f7e9;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-family: orbitron;
-        }
-    .main .dt2{
-        text-shadow: -4px 0 2px #4957ef, 4px 0 2px #b01b35;
-        }
-    .social{
-        width:100%;
-        display:flex;
-        justify-content:space-evenly;
-        color:white;
-        }
-    .social button{
-        width:12vw;
-        color:white;
-        background-color: #121212;
-        border:none;
-        cursor:pointer;
-        }
-    .social button path{
-        fill:white;
-    }
-    .social button path:hover{
-        fill:lightgray;
-    }
-        @media (max-width:768px){
-            .social button{
-                width:20vw;
-            }
-        }
-</style>
-
 <script>
     (function loop() {
         let rand = Math.round(Math.random() * (3000 - 500)) + 500;

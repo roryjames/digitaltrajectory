@@ -1,10 +1,6 @@
     body{
         background-color:#121212;
     }
-    @font-face {
-        font-family: orbitron;
-        src: url('/Orbitron-VariableFont_wght.ttf');
-        }
     .container{
         color:black;
         display:flex;

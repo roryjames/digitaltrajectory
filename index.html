@@ -10,49 +10,79 @@
 <body> 
     <div class="main">
         <div id='title'>Digital Trajectory</div>
-    </div>   
+    </div>
+    <div class="social">
+        <button><a href="https://www.github.com/roryjames">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                <path d="M400 139c144 0 260 116 260 260 0 115-75 213-178 247-9 3-17-2-17-13v-71c0-35-18-48-18-48 57-6 119-28 119-128 0-44-27-70-27-70s14-29-2-69c0 0-22-7-72 27-42-12-88-12-130 0-50-34-72-27-72-27-16 40-2 69-2 69s-27 26-27 70c0 100 62 122 119 128 0 0-14 10-17 35-15 7-53 18-76-22 0 0-13-25-39-27 0 0-26 0-2 16 0 0 17 8 29 38 0 0 16 51 88 35v44c0 11-9 16-18 13-103-34-178-132-178-247 0-144 116-260 260-260z"/>
+              </svg>
+            </a>
+          </button>
+          <button>
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                <path d="M150 400c0-119 0-166 42-208s88-42 208-42 166 0 208 42 42 89 42 208 0 166-42 208-88 42-208 42-166 0-208-42-42-89-42-208zm455 0c0-114 0-148-29-176-29-29-62-29-176-29s-148 0-176 29c-29 29-29 62-29 176s0 148 29 176c29 29 62 29 176 29s148 0 176-29c29-29 29-62 29-176zM400 272a128 128 0 1 1 0 256 128 128 0 0 1 0-256zm0 211c46 0 83-37 83-83s-37-83-83-83-83 37-83 83 37 83 83 83zm163-216c0 16-13 30-30 30-16 0-30-14-30-30 0-17 14-30 30-30 17 0 30 13 30 30z"/>
+              </svg>
+              
+          </button>
+          <button>
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                <path d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z"/>
+                <defs>
+                    <filter id="f1" x="0" y="0" width="200%" height="200%">
+                      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                      <feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+                    </filter>
+                  </defs>
+              </svg>
+              
+          </button>
+    </div>
 </body>
 
 <style>
     @font-face {
-  font-family: orbitron;
-  src: url('/Orbitron-VariableFont_wght.ttf');
-    }
+        font-family: orbitron;
+        src: url('/Orbitron-VariableFont_wght.ttf');
+        }
     body{
         background-color:#121212;
         font-family:Arial, Helvetica, sans-serif;
         color:black;
-    }
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+        }
     .main{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    text-align:center;
-    max-height:800px;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-.main{
-    color:#f7f7e9;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
-    font-size:10vw;
-}
-.main .dt{
+        color:#f7f7e9;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Orbitron', sans-serif;
+        font-size:8vw;
+        text-align:center;
+        margin:10vw;
+        }
+    .main .dt{
         color:#f7f7e9;
         font-weight: bold;
         text-transform: uppercase;
         font-family: orbitron;
-    }
-  .main .dt2{
+        }
+    .main .dt2{
         text-shadow: -4px 0 2px #4957ef, 4px 0 2px #b01b35;
-    }
+        }
+    .social{
+        width:100%;
+        display:flex;
+        justify-content:space-evenly;
+        color:white;
+        }
+    .social button{
+        width:12vw;
+        color:white;
+        background-color: #121212;
+        border:none;
+        cursor:pointer;
+        }
 
 </style>
 
